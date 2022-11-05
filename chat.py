@@ -81,7 +81,7 @@ def do_sender(socket):
     return 0
 
 def do_reciever(socket):
-    # receive data stream. it won't accept data packet greater than 1024 bytes
+    # receive data stream.
     data = socket.recv(BUFFER_SIZE).decode()
     if not data:
         return 1
